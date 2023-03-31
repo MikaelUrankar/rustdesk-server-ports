@@ -1,0 +1,11 @@
+--- Cargo.toml.orig	2022-05-30 12:01:22 UTC
++++ Cargo.toml
+@@ -42,7 +42,7 @@ http = "0.2"
+ regex = "1.4"
+ tower-http = { version = "0.2", features = ["fs", "trace", "cors"] }
+ http = "0.2"
+-flexi_logger = { version = "0.22", features = ["async", "use_chrono_for_offset"] }
++flexi_logger = { version = "0.22", features = ["async", "use_chrono_for_offset", "dont_minimize_extra_stacks"] }
+ 
+ [build-dependencies]
+ hbb_common = { path = "libs/hbb_common" }
